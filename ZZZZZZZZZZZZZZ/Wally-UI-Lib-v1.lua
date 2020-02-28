@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://pastebin.com/raw/7Z6TzFnv", true))()
+local library = loadstring(game:HttpGet("https://ivyperion.ml/sources/Wally-UI-Lib-v1.lua", true))()
 local example = library:CreateWindow({text = "Example"})
 
 local credits = library:CreateWindow({text='Credits'})

@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://pastebin.com/raw/eWKgbdix", true))()
+local library = loadstring(game:HttpGet("https://ivyperion.ml/sources/Wally-UI-Lib-v2-Source.lua", true))()
 local w = library:CreateWindow('Example')
 w:Section('Top')
 local t = w:Toggle('Example Toggle', {flag = "toggle1"})
