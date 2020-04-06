@@ -1,22 +1,32 @@
 local library = loadstring(game:HttpGet("https://ivyperion.ml/sources/Wally-UI-Lib-v2-Source.lua", true))()
 local w = library:CreateWindow('Example')
+
+
 w:Section('Top')
-local t = w:Toggle('Example Toggle', {flag = "toggle1"})
+
+a:Toggle('Show Hitbox', {flag = "hitbox"}, function(state)
+end)
+
 local b = w:Button("Example Button", function()
    print(w.flags.toggle1)
 end)
+
 w:Section('Middle')
+
 local old = workspace.CurrentCamera.FieldOfView
-local s = w:Slider("FOV", {
+
+w:Slider("FOV", {
    min = math.floor(workspace.CurrentCamera.FieldOfView);
    max = 120;
    flag = 'fov'
 }, function(v)
    workspace.CurrentCamera.FieldOfView = v;
 end)
-local b2 = w:Button('Reset FOV', function()
+
+w:Button('Reset FOV', function()
    s:Set(old)
 end)
+
 w:Section('Bottom')
 
 local box = w:Box('WalkSpeed', {
