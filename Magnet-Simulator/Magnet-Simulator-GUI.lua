@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://pastebin.com/raw/7Z6TzFnv", true))()
+local library = loadstring(game:HttpGet("https://ivyperion.ml/sources/Wally-UI-Lib-v1-Source.lua", true))()
 
 -- Tabs
 local Autofarm = library:CreateWindow({text='Auto Farm'})
